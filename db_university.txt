@@ -2,3 +2,6 @@ SELECT name, surname FROM students WHERE date_of_birth BETWEEN '1990-01-01' AND 
 SELECT * FROM courses WHERE cfu > 10;
 SELECT * FROM students WHERE DATEDIFF(CURDATE(), date_of_birth)/365 > 30;
 SELECT * FROM exams WHERE DATE_FORMAT(date, '%Y-%m-%d') = '2020-06-20' AND DATE_FORMAT(hour, '%H:%i:%s') >= '14:00:00';
+SELECT * FROM degrees WHERE name LIKE '%magistrale%';
+SELECT COUNT(*) FROM departments;
+SELECT COUNT(*) FROM teachers WHERE phone IS NULL;
